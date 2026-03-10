@@ -1,5 +1,5 @@
-# Use Debian as base image to have shell and utilities
-FROM debian:bookworm-slim
+# Use Debian trixie-slim (glibc 2.40) to satisfy Apollo MCP Server's glibc >= 2.38 requirement
+FROM debian:trixie-slim
 
 WORKDIR /app
 

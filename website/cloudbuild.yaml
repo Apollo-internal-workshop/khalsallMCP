@@ -1,0 +1,17 @@
+steps:
+  # Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'build',
+      '-t', 'gcr.io/summit-enterprise-workshop/website:latest',
+      './website'
+    ]
+
+  # Push the Docker image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [
+      'push', 'gcr.io/summit-enterprise-workshop/website:latest'
+    ]
+
+images:
+  - 'gcr.io/summit-enterprise-workshop/website:latest'
