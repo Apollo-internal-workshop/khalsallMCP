@@ -14,7 +14,7 @@ homepage:
 cors:
   origins:
     - https://studio.apollographql.com
-  allow_credentials: true
+  allow_any_origin: true
 
 # This would make debugging easier, but should be a per subgraph basis for production
 include_subgraph_errors:
