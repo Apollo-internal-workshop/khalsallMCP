@@ -40,5 +40,5 @@ authentication:
 
 authorization:
   require_authentication: false
-  preview_directives:
+  directives:
     enabled: true
